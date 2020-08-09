@@ -8,20 +8,26 @@ import ExternalLink from '@common/ExternalLink';
 
 import GithubIcon from '@static/icons/github.svg';
 import InstagramIcon from '@static/icons/instagram.svg';
-import TwitterIcon from '@static/icons/twitter.svg';
+import LinkedInIcon from '@static/icons/linkedin.svg'
+import GmailIcon from '@static/icons/gmail.svg'
+
 
 const SOCIAL = [
   {
     icon: GithubIcon,
-    link: 'https://github.com/ajayns/gatsby-absurd',
+    link: 'https://github.com/kporcioncula04',
   },
   {
     icon: InstagramIcon,
-    link: 'https://instagram.com/ajay_ns',
+    link: 'https://instagram.com/karolporcioncula',
   },
   {
-    icon: TwitterIcon,
-    link: 'https://twitter.com/ajayns08',
+    icon: LinkedInIcon,
+    link: 'https://www.linkedin.com/in/karolina-p04/',
+  },
+  {
+    icon: GmailIcon,
+    link: 'https://www.linkedin.com/in/karolina-p04/',
   },
 ];
 
@@ -52,9 +58,8 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>by karolina</h2>
               <span>
-                Built with Gatsby
+              &#xa9;Built with Gatsby
               </span>
             </Copyright>
             <SocialIcons>

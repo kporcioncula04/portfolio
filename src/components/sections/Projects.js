@@ -11,13 +11,15 @@ const PROJECT = [
     name: 'Scribby',
     image: 'josh.jpg',
     description: 'Scribby is an interactive web canvas integrated with a code editor app that makes collaboration, diagraming, and writing out code convenient and easy.',
-    link: 'https://github.com/Capstone-GH/capstone-wb'
+    link: 'https://github.com/Capstone-GH/capstone-wb',
+    url: 'https://scribby-dev.herokuapp.com/'
   },
   {
     name: 'RETROspective',
     image: 'lisa.jpg',
     description: 'An online e-commerce shop where clients can purchase retro video games made in the 90’s.',
-    link: 'https://github.com/ShopperSquad/GraceShopper'
+    link: 'https://github.com/ShopperSquad/GraceShopper',
+    url: 'https://retrospective1972.herokuapp.com/'
   },
   {
     name: 'BIBO',
@@ -60,7 +62,7 @@ const Projects = () => (
         <Container style={{ position: 'relative' }}>
           <h1>Projects</h1>
           <TeamGrid>
-            {PROJECT.map(({ name, image, description,link}) => {
+            {PROJECT.map(({ name, image, description,link,url}) => {
               const img = data.allFile.edges.find(
                 ({ node }) => node.relativePath === image
               ).node;
@@ -71,18 +73,16 @@ const Projects = () => (
                   <Subtitle>{description}</Subtitle>
                   <br />
                   <StyledExternalLink href={link}>
-                  Check out source &nbsp;&#x2794;
+                  Github Source &nbsp;&#x2794;
+                </StyledExternalLink>
+                <br />
+                <StyledExternalLink href={url}>
+                  Live Demo &nbsp;&#x2794;
                 </StyledExternalLink>
                 </div>
               );
             })}
           </TeamGrid>
-          <Art>
-            <Img fluid={data.art_team.childImageSharp.fluid} />
-          </Art>
-          <ArtMobile>
-            <Img fluid={data.art_team.childImageSharp.fluid} />
-          </ArtMobile>
         </Container>
       </Section>
     )}
@@ -91,11 +91,10 @@ const Projects = () => (
 
 const TeamGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, 200px);
+  grid-template-columns: repeat(auto-fill, 300px);
   grid-template-rows: min-content;
   grid-gap: 50px;
   justify-content: space-between;
-  width: 60%;
   margin-top: 72px;
 
   @media (max-width: ${props => props.theme.screen.lg}) {
@@ -109,34 +108,6 @@ const TeamGrid = styled.div`
 
   @media (max-width: ${props => props.theme.screen.xs}) {
     grid-gap: 24px;
-  }
-`;
-
-const Art = styled.figure`
-  width: 800px;
-  margin: -80px 0;
-  position: absolute;
-  top: 0;
-  left: 70%;
-
-  @media (max-width: ${props => props.theme.screen.lg}) {
-    top: 20%;
-  }
-
-  @media (max-width: ${props => props.theme.screen.md}) {
-    display: none;
-  }
-`;
-
-const ArtMobile = styled.figure`
-  width: 100%;
-  margin: 0;
-  display: none;
-  margin-top: 64px;
-  margin-bottom: -60%;
-
-  @media (max-width: ${props => props.theme.screen.md}) {
-    display: block;
   }
 `;
 
