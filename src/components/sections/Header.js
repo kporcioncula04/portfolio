@@ -53,20 +53,6 @@ const HeaderWrapper = styled.header`
   }
 `;
 
-// const Art = styled.figure`
-//   width: 100%;
-//   margin: 0;
-
-//   > div {
-//     width: 120%;
-//     margin-bottom: -4.5%;
-
-//     @media (max-width: ${props => props.theme.screen.md}) {
-//       width: 100%;
-//     }
-//   }
-// `;
-
 const HeadImage = styled.figure`
   margin: 0;
   max-width: 300px;
@@ -74,7 +60,7 @@ const HeadImage = styled.figure`
   border: transparent;
   border-radius:10px;
   margin-left: 100px;
-  margin-bottom:10px;
+  margin-bottom: 60px;
 `;
 
 const Grid = styled.div`

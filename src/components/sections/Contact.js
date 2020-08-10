@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+// import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
@@ -16,22 +16,27 @@ const SOCIAL = [
   {
     icon: GithubIcon,
     link: 'https://github.com/kporcioncula04',
+    name: 'Github'
   },
   {
     icon: InstagramIcon,
     link: 'https://instagram.com/karolporcioncula',
+    name: 'Instagram'
   },
   {
     icon: LinkedInIcon,
     link: 'https://www.linkedin.com/in/karolina-p04/',
+    name: 'LinkedIn'
   },
   {
     icon: GmailIcon,
     link: 'mailto:kporcioncula.04@gmail.com',
+    name: 'Gmail'
   },
   {
     icon: ResumeIcon,
-    link: 'https://drive.google.com/file/d/1fVPhMS3yck9Y3EtLNeZCz6dyvERFP-4X/view?usp=sharing'
+    link: 'https://drive.google.com/file/d/1fVPhMS3yck9Y3EtLNeZCz6dyvERFP-4X/view?usp=sharing',
+    name: 'Resume'
   }
 ];
 
@@ -55,14 +60,16 @@ const Contact = () => (
       <Section id="brands" accent>
         <StyledContainer>
           <div>
-            <h1>Contact</h1>
+            {/* <h1 style={{justifyContent: 'center'}}>Contact</h1> */}
+            <HeadText>Contact</HeadText>
             <SocialIcons>
-              {SOCIAL.map(({ icon, link }) => (
+              {SOCIAL.map(({ icon, link, name }) => (
                 <ExternalLink key={link} href={link}>
                    <img src={icon} alt="link" />
+                   <br />
+                   <IconText>{name}</IconText>
                 </ExternalLink>
               ))}
-
             </SocialIcons>
           </div>
           {/* <Fig>
@@ -74,12 +81,19 @@ const Contact = () => (
   />
 );
 
+const IconText = styled.p`
+    text-align: center
+`
+const HeadText = styled.h1`
+    text-align: center
+`;
+
 const SocialIcons = styled.div`
   display: flex;
 
   img {
     margin: 0 8px;
-    width: 90px;
+    width: 100px;
     height: 70px;
     margin-top: 30px;
   }
@@ -99,21 +113,21 @@ const StyledContainer = styled(Container)`
   }
 `;
 
-const Fig = styled.figure`
-  width: 600px;
-  position: absolute;
-  top: -12%;
-  right: 50%;
+// const Fig = styled.figure`
+//   width: 600px;
+//   position: absolute;
+//   top: -12%;
+//   right: 50%;
 
-  @media (max-width: ${props => props.theme.screen.lg}) {
-    top: 0;
-    right: 65%;
-    width: 500px;
-  }
+//   @media (max-width: ${props => props.theme.screen.lg}) {
+//     top: 0;
+//     right: 65%;
+//     width: 500px;
+//   }
 
-  @media (max-width: ${props => props.theme.screen.md}) {
-    display: none;
-  }
-`;
+//   @media (max-width: ${props => props.theme.screen.md}) {
+//     display: none;
+//   }
+// `;
 
 export default Contact;
