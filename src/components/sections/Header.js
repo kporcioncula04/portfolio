@@ -32,7 +32,7 @@ const Header = () => (
               <h1>
                 hi, i'm karolina
                 <br />
-                <p>software enginneer. fullstack developer.</p>
+                <p>software engineer. fullstack developer.</p>
                 <p>yoginī. matcha lover. oatkeeper </p>
                 <br />
               </h1>
