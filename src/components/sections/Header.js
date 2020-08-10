@@ -45,15 +45,6 @@ const Header = () => (
   />
 );
 
-const HeaderWrapper = styled.header`
-  background-color: ${props => props.theme.color.primary};
-  padding-top: 96px;
-
-  @media (max-width: ${props => props.theme.screen.md}) {
-    padding-top: 128px;
-  }
-`;
-
 const HeadImage = styled.figure`
   margin: 0;
   max-width: 300px;
@@ -62,6 +53,23 @@ const HeadImage = styled.figure`
   border-radius:10px;
   margin-left: 250px;
   margin-bottom: 60px;
+
+  @media (max-width: ${props => props.theme.screen.md}) {
+    padding-top: 128px;
+  }
+`;
+
+const HeaderWrapper = styled.header`
+  background-color: ${props => props.theme.color.primary};
+  padding-top: 96px;
+
+  @media (max-width: ${props => props.theme.screen.md}) {
+    grid-template-columns: 1fr;
+    grid-gap: 80px;
+
+    > ${HeadImage} {
+      order: 2;
+    }
 `;
 
 const Grid = styled.div`
@@ -82,7 +90,6 @@ const Grid = styled.div`
 
 const Text = styled.div`
   justify-self: left;
-  margin-right:80px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-self: start;

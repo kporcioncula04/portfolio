@@ -60,7 +60,7 @@ const Projects = () => (
     render={data => (
       <Section id="projects" accent="secondary">
         <Container style={{ position: 'relative' }}>
-          <h1>Projects</h1>
+          <h1 style={{textAlign: 'center'}}>Projects</h1>
           <TeamGrid>
             {PROJECT.map(({ name, image, description,link,url}) => {
               const img = data.allFile.edges.find(
