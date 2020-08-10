@@ -57,11 +57,11 @@ const Contact = () => (
       }
     `}
     render={data => (
-      <Section id="brands" accent>
+      <Section id="contact" accent>
         <StyledContainer>
           <div>
-            {/* <h1 style={{justifyContent: 'center'}}>Contact</h1> */}
-            <HeadText>Contact</HeadText>
+            <HeadText>Contact Me</HeadText>
+            <p style={{textAlign: 'center'}}>I'll be glad to answer your questions!</p>
             <SocialIcons>
               {SOCIAL.map(({ icon, link, name }) => (
                 <ExternalLink key={link} href={link}>

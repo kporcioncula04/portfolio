@@ -15,7 +15,7 @@ import {
 
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 
-const NAV_ITEMS = ['About', 'Project', 'Contact'];
+const NAV_ITEMS = ['About', 'Projects', 'Contact'];
 
 class Navbar extends Component {
   state = {
@@ -41,7 +41,7 @@ class Navbar extends Component {
   getNavList = ({ mobile = false }) => (
     <NavListWrapper mobile={mobile}>
       <Scrollspy
-        items={NAV_ITEMS.map(item => item.toLowerCase())}
+        items={NAV_ITEMS.map(item => <div>item.toLowerCase()</div>)}
         currentClassName="active"
         mobile={mobile}
         offset={-64}

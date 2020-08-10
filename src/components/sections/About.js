@@ -40,11 +40,12 @@ const About = () => (
             <div>
               <h2>About Me</h2>
               <p>
-                Hi! I'm Karolina Porcioncula.
+              HI! I'm Karolina Porcioncula, a full-stack web developer and software engineer. After deep self-reflection of working in retail banking , I've decided to pursue further studies and joined a coding bootcamp. Completing the 17-week immersive program at Grace Hopper in FSA of Code, has been the most rewarding decision I have made in my life. I enjoy building something from nothing. I love learning new technologies. I love seeing my creativity come to life.
               </p>
               <br/>
               <p>
-              When I'm not in front of a computer, you can find me doing yoga, cooking, and spending time with my loved ones.
+
+              When I'm not in front of a computer, you can find me doing yoga, cooking, or spending time with my loved ones.
               </p>
             </div>
             <HeadImage>
