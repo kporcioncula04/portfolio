@@ -6,8 +6,7 @@ import Navbar from '@common/Navbar';
 import Header from '@sections/Header';
 import About from '@sections/About';
 import Projects from '@sections/Projects';
-import Team from '@sections/Team';
-import Faq from '@sections/Faq';
+import Contact from '@sections/Contact';
 import Footer from '@sections/Footer';
 
 const IndexPage = () => (
@@ -16,8 +15,7 @@ const IndexPage = () => (
     <Header />
     <About />
     <Projects />
-    <Team />
-    <Faq />
+    <Contact />
     <Footer />
   </Layout>
 );
