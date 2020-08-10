@@ -48,15 +48,18 @@ const Header = () => (
 const HeadImage = styled.figure`
   margin: 0;
   max-width: 300px;
-  width: 90%;
+  width: 100%;
   border: transparent;
   border-radius:10px;
-  margin-left: 250px;
-  margin-bottom: 60px;
+  margin-left: 200px;
+  margin-bottom: 75px;
 
-  @media (max-width: ${props => props.theme.screen.md}) {
-    padding-top: 128px;
-  }
+  > div {
+    width: 100%;
+    margin-bottom: -4.5%;
+    @media (max-width: ${props => props.theme.screen.md}) {
+      width: 100%;
+    }
 `;
 
 const HeaderWrapper = styled.header`
@@ -65,7 +68,7 @@ const HeaderWrapper = styled.header`
 
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
-    grid-gap: 80px;
+    grid-gap: 60px;
 
     > ${HeadImage} {
       order: 2;
@@ -76,7 +79,7 @@ const Grid = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  grid-gap: 64px;
+  grid-gap: 5px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
@@ -95,7 +98,5 @@ const Text = styled.div`
     justify-self: start;
   }
 `;
-
-
 
 export default Header;
