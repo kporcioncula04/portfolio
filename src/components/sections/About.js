@@ -9,17 +9,6 @@ const About = () => (
   <StaticQuery
     query={graphql`
       query {
-        art_fast: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "fast" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 760) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-
         art_learn: file(
           sourceInstanceName: { eq: "art" }
           name: { eq: "learn_yourself" }
@@ -31,16 +20,17 @@ const About = () => (
           }
         }
 
-        art_ideas: file(
+        glasses: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "ideas" }
+          name: { eq: "04" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 760) {
+            fluid(maxWidth: 1400) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
         }
+
       }
     `}
     render={data => (
@@ -50,43 +40,33 @@ const About = () => (
             <div>
               <h2>About Me</h2>
               <p>
-                Gatsby.js builds the fastest possible website. Instead of
-                waiting to generate pages when requested, pre-build pages and
-                lift them into a global cloud of servers — ready to be delivered
-                instantly to your users wherever they are.
+                Hi! I'm Karolina Porcioncula.
+              </p>
+              <br/>
+              <p>
+              When I'm not in front of a computer, you can find me doing yoga, cooking, and spending time with my loved ones.
               </p>
             </div>
-            <Art>
-              <Img fluid={data.art_fast.childImageSharp.fluid} />
-            </Art>
+            <HeadImage>
+              <Img fluid={data.glasses.childImageSharp.fluid} />
+            </HeadImage>
           </Grid>
           <Grid inverse>
-            <Art>
+            <ImageSize>
               <Img fluid={data.art_learn.childImageSharp.fluid} />
-            </Art>
+            </ImageSize>
             <div>
               <h2>Tech Stack</h2>
               <p>
-                Proficient: Javascript, React, Redux, Express, Postgres
-                Knowledgable: Mocha, Chai
+              Proficient: HTML, CSS, JS, Node.js , Express, Sequelize, React, Redux, Bootstrap
               </p>
+              <br/>
+              <p>
+              Competent: Mocha, Chai, Jasmin, React- Native
+              </p>
+
             </div>
           </Grid>
-          {/* <Grid>
-            <div>
-              <h2>Grow and build your ideas</h2>
-              <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
-                <br />
-                <br />
-                Gatsby is fast in every way that matters.
-              </p>
-            </div>
-            <Art>
-              <Img fluid={data.art_ideas.childImageSharp.fluid} />
-            </Art>
-          </Grid> */}
         </Container>
       </Section>
     )}
@@ -125,17 +105,25 @@ const Grid = styled.div`
     ${props =>
       props.inverse &&
       `
-        ${Art} {
+        ${ImageSize} {
           order: 2;
         }
     `}
   }
 `;
 
-const Art = styled.figure`
+const ImageSize = styled.figure`
   margin: 0;
   max-width: 380px;
   width: 100%;
+`;
+
+const HeadImage = styled.figure`
+  margin: 0;
+  max-width: 380px;
+  width: 100%;
+  border: transparent;
+  border-radius:10px;
 `;
 
 export default About;

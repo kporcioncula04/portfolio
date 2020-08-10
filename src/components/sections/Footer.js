@@ -1,7 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
@@ -10,6 +8,7 @@ import GithubIcon from '@static/icons/github.svg';
 import InstagramIcon from '@static/icons/instagram.svg';
 import LinkedInIcon from '@static/icons/linkedin.svg'
 import GmailIcon from '@static/icons/gmail.svg'
+import ResumeIcon from '@static/icons/resume.svg'
 
 
 const SOCIAL = [
@@ -27,53 +26,41 @@ const SOCIAL = [
   },
   {
     icon: GmailIcon,
-    link: 'https://www.linkedin.com/in/karolina-p04/',
+    link: 'mailto:kporcioncula.04@gmail.com',
   },
+  {
+    icon: ResumeIcon,
+    link: 'https://drive.google.com/file/d/1fVPhMS3yck9Y3EtLNeZCz6dyvERFP-4X/view?usp=sharing'
+  }
 ];
 
 const Footer = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        art_pot: file(
-          sourceInstanceName: { eq: "art" }
-          name: { eq: "customers_pot" }
-        ) {
-          childImageSharp {
-            fluid(maxWidth: 960) {
-              ...GatsbyImageSharpFluid_withWebp_tracedSVG
-            }
-          }
-        }
-      }
-    `}
-    render={data => (
-      <React.Fragment>
-        <Art>
-          <Img
-            fluid={data.art_pot.childImageSharp.fluid}
-            style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
-          />
-        </Art>
-        <FooterWrapper>
-          <StyledContainer>
-            <Copyright>
-              <span>
-              &#xa9;Built with Gatsby
-              </span>
-            </Copyright>
-            <SocialIcons>
-              {SOCIAL.map(({ icon, link }) => (
-                <ExternalLink key={link} href={link}>
-                  <img src={icon} alt="link" />
-                </ExternalLink>
-              ))}
-            </SocialIcons>
-          </StyledContainer>
-        </FooterWrapper>
-      </React.Fragment>
-    )}
-  />
+   (
+    <React.Fragment>
+      <FooterWrapper>
+        <StyledContainer>
+          <Copyright>
+            <span>
+            &#xa9;Built with Gatsby
+            </span>
+          <br />
+          <span>
+          <ExternalLink href={`https://absurd.design/`}>
+          Illustrations by <strong>absurd.design</strong>.
+          </ExternalLink>
+            </span>
+          </Copyright>
+          <SocialIcons>
+            {SOCIAL.map(({ icon, link }) => (
+              <ExternalLink key={link} href={link}>
+                <img src={icon} alt="link" />
+              </ExternalLink>
+            ))}
+          </SocialIcons>
+        </StyledContainer>
+      </FooterWrapper>
+    </React.Fragment>
+  )
 );
 
 const SocialIcons = styled.div`
@@ -104,13 +91,6 @@ const Copyright = styled.div`
     text-decoration: none;
     color: inherit;
   }
-`;
-
-const Art = styled.figure`
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  margin-top: 48px;
 `;
 
 const StyledContainer = styled(Container)`

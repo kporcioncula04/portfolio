@@ -1,3 +1,3 @@
 Portfolio Site
 
-Built with GatsbyJS
+Built with GatsbyJS.

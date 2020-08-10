@@ -9,22 +9,22 @@ import ExternalLink from '@common/ExternalLink';
 const PROJECT = [
   {
     name: 'Scribby',
-    image: 'josh.jpg',
+    image: 'scribby.png',
     description: 'Scribby is an interactive web canvas integrated with a code editor app that makes collaboration, diagraming, and writing out code convenient and easy.',
     link: 'https://github.com/Capstone-GH/capstone-wb',
     url: 'https://scribby-dev.herokuapp.com/'
   },
   {
     name: 'RETROspective',
-    image: 'lisa.jpg',
+    image: 'retro.png',
     description: 'An online e-commerce shop where clients can purchase retro video games made in the 90’s.',
     link: 'https://github.com/ShopperSquad/GraceShopper',
     url: 'https://retrospective1972.herokuapp.com/'
   },
   {
     name: 'BIBO',
-    image: 'ashlyn.jpg',
-    description: 'A starter meditation app where users can easily integrate it in their daily routines.',
+    image: 'bibo.PNG',
+    description: 'A starter meditation mobile app built with React Native.',
     link: 'https://github.com/kporcioncula04/meditation_bibo'
   },
 ];
@@ -68,7 +68,7 @@ const Projects = () => (
               ).node;
               return (
                 <div key={name}>
-                  <Img fluid={img.childImageSharp.fluid} alt={name} />
+                  <Img fluid={img.childImageSharp.fluid} alt={name}/>
                   <Title>{name}</Title>
                   <Subtitle>{description}</Subtitle>
                   <br />

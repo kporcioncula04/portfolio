@@ -4,18 +4,17 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
-import ExternalLink from '@common/ExternalLink';
 
 const Header = () => (
   <StaticQuery
     query={graphql`
       query {
-        art_build: file(
+        rounded: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "build" }
+          name: { eq: "rounded" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1400) {
+            fluid(maxWidth: 760) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -26,22 +25,17 @@ const Header = () => (
       <HeaderWrapper>
         <Container>
           <Grid>
-            <Art>
-              <Img fluid={data.art_build.childImageSharp.fluid} />
-            </Art>
+            <HeadImage>
+              <Img fluid={data.rounded.childImageSharp.fluid} />
+            </HeadImage>
             <Text>
               <h1>
                 hi, i'm karolina
                 <br />
-                && i'm a software engineer
+                & i'm a software engineer
                 <br />
               </h1>
               <br />
-              <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
-                  Check out source &nbsp;&#x2794;
-                </StyledExternalLink>
-              </p>
             </Text>
           </Grid>
         </Container>
@@ -59,18 +53,28 @@ const HeaderWrapper = styled.header`
   }
 `;
 
-const Art = styled.figure`
-  width: 100%;
+// const Art = styled.figure`
+//   width: 100%;
+//   margin: 0;
+
+//   > div {
+//     width: 120%;
+//     margin-bottom: -4.5%;
+
+//     @media (max-width: ${props => props.theme.screen.md}) {
+//       width: 100%;
+//     }
+//   }
+// `;
+
+const HeadImage = styled.figure`
   margin: 0;
-
-  > div {
-    width: 120%;
-    margin-bottom: -4.5%;
-
-    @media (max-width: ${props => props.theme.screen.md}) {
-      width: 100%;
-    }
-  }
+  max-width: 300px;
+  width: 90%;
+  border: transparent;
+  border-radius:10px;
+  margin-left: 100px;
+  margin-bottom:10px;
 `;
 
 const Grid = styled.div`
@@ -83,7 +87,7 @@ const Grid = styled.div`
     grid-template-columns: 1fr;
     grid-gap: 80px;
 
-    > ${Art} {
+    > ${HeadImage} {
       order: 2;
     }
   }
@@ -97,13 +101,6 @@ const Text = styled.div`
   }
 `;
 
-const StyledExternalLink = styled(ExternalLink)`
-  color: inherit;
-  text-decoration: none;
 
-  &:hover {
-    color: ${props => props.theme.color.black.regular};
-  }
-`;
 
 export default Header;
