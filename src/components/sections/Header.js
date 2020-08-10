@@ -32,7 +32,8 @@ const Header = () => (
               <h1>
                 hi, i'm karolina
                 <br />
-                & i'm a software engineer
+                <p>software enginneer. fullstack developer.</p>
+                <p>yoginī. matcha lover. oatkeeper </p>
                 <br />
               </h1>
               <br />
@@ -59,7 +60,7 @@ const HeadImage = styled.figure`
   width: 90%;
   border: transparent;
   border-radius:10px;
-  margin-left: 100px;
+  margin-left: 250px;
   margin-bottom: 60px;
 `;
 
@@ -80,7 +81,8 @@ const Grid = styled.div`
 `;
 
 const Text = styled.div`
-  justify-self: center;
+  justify-self: left;
+  margin-right:80px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-self: start;
