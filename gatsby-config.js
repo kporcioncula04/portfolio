@@ -1,6 +1,11 @@
 const path = require('path');
 
 module.exports = {
+  siteMetadata: {
+    title: `Karolina Porcioncula`,
+    description: `Portfolio - Karolina Porcioncula`,
+    author: `Karolina Porcioncula`,
+  },
   plugins: [
     `gatsby-plugin-react-helmet`,
     {
@@ -42,6 +47,7 @@ module.exports = {
         icon: `static/favicon.svg`,
       },
     },
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
