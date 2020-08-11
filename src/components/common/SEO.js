@@ -6,7 +6,7 @@ const SEO_DATA = {
   title: 'Karolina',
   url: '',
   author: 'Karolina',
-  keywords: ['gatsby', 'site', 'absurd'],
+  keywords: ['gatsby', 'site', 'karolina'],
   img: '',
 };
 
