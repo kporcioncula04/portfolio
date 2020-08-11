@@ -35,7 +35,7 @@ const SOCIAL = [
   },
   {
     icon: ResumeIcon,
-    link: 'https://drive.google.com/file/d/1fVPhMS3yck9Y3EtLNeZCz6dyvERFP-4X/view?usp=sharing',
+    link: 'https://drive.google.com/file/d/1eI00eo2dZH-n48-Q7sOU2nhZBll3E4RV/view?usp=sharing',
     name: 'Resume'
   }
 ];

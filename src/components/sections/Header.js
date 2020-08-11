@@ -45,18 +45,11 @@ const Header = () => (
   />
 );
 
- // max-width: 300px;
-  // width: 100%;
-  // border: transparent;
-  // border-radius:10px;
-  // margin-left: 200px;
-  // margin-bottom: 75px;
-
 const HeadImage = styled.figure`
-  margin: 0;
+  justify-self: right;
+  width: 100%;
   max-width: 300px;
-  margin-bottom: 75px;
-  margin-left: 200px;
+  margin-bottom: 96px;
 
   > div {
     width: 100%;
@@ -72,11 +65,8 @@ const HeaderWrapper = styled.header`
   padding-top: 96px;
 
   @media (max-width: ${props => props.theme.screen.md}) {
-    /grid-template-columns: 1fr;
-
-    > ${HeadImage} {
-      order: 2;
-    }
+    padding-top: 128px;
+  }
 `;
 
 const Grid = styled.div`
@@ -86,6 +76,7 @@ const Grid = styled.div`
 
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
+    grid-gap: 50px;
 
     > ${HeadImage} {
       order: 2;
