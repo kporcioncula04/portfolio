@@ -107,6 +107,7 @@ const StyledContainer = styled(Container)`
   display: grid;
   justify-content: center;
   position: relative;
+  margin-top: 50px
 
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-content: center;

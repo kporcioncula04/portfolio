@@ -46,7 +46,7 @@ const Footer = () => (
           <br />
           <span>
           <ExternalLink href={`https://absurd.design/`}>
-          Illustrations by <strong>absurd.design</strong>.
+          Illustrations by <strong>absurd.design</strong>
           </ExternalLink>
             </span>
           </Copyright>
