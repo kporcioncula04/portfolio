@@ -4,19 +4,19 @@ import Helmet from 'react-helmet';
 const SEO_DATA = {
   description: 'Portfolio - Karolina Porcioncula',
   title: 'Karolina',
-  url: '',
-  author: 'Karolina',
-  keywords: ['gatsby', 'site', 'karolina'],
-  img: '',
+  // url: 'karolina.life',
+  author: 'Karolina Porcioncula',
+  // keywords: ['gatsby', 'site', 'karolina'],
+  // img: '',
 };
 
 const SEO = () => {
   return (
     <Helmet>
       <meta property="og:title" content={SEO_DATA.title} />
-      <meta property="og:type" content="website" />
+      {/* <meta property="og:type" content="website" />
       <meta property="og:url" content={SEO_DATA.url} />
-      <meta property="og:image" content={SEO_DATA.img} />
+      <meta property="og:image" content={SEO_DATA.img} /> */}
       <meta property="og:description" content={SEO_DATA.description} />
 
       <meta name="description" content={SEO_DATA.description} />
