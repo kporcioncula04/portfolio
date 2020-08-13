@@ -59,11 +59,15 @@ const About = () => (
             <div>
               <h2>Tech Stack</h2>
               <p>
-              Proficient: HTML, CSS, JS, Node.js , Express, Sequelize, React, Redux, Bootstrap
+              Proficient: HTML5, CSS5, Javascript, Node.js , Express, Sequelize, PostgreSQL, React,
+ Redux, Material UI, React-Bootstrap
               </p>
               <br/>
               <p>
-              Competent: Mocha, Chai, Jasmin, React- Native
+              Knowledgeable: Webpack, Socket.io,SQL, TDD (Mocha/Chai/Jasmin), Heroku, TravisCI, Git, GitHub
+              </p>
+              <p>
+              Basic: React-Native, MongoDB
               </p>
 
             </div>
@@ -73,6 +77,7 @@ const About = () => (
     )}
   />
 );
+
 
 const Grid = styled.div`
   display: grid;
