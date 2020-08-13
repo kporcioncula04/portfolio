@@ -66,6 +66,7 @@ const About = () => (
               <p>
               Knowledgeable: Webpack, Socket.io,SQL, TDD (Mocha/Chai/Jasmin), Heroku, TravisCI, Git, GitHub
               </p>
+              <br/>
               <p>
               Basic: React-Native, MongoDB
               </p>
