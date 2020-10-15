@@ -27,6 +27,20 @@ const PROJECT = [
     description: 'A starter meditation mobile app built with React Native.',
     link: 'https://github.com/kporcioncula04/meditation_bibo'
   },
+  {
+    name: 'Priceless Jones',
+    image: 'pj.png',
+    description: 'Build out a stock market simulator app for the 6-day hackathon challenge.',
+    link: 'https://github.com/PinchoPhoebeInc/stockmarketchallenge',
+    url: 'https://priceless-jones-e74308.netlify.app/'
+  },
+  // {
+  //   name: 'Priceless Jones',
+  //   image: 'pj.png',
+  //   description: 'For the 6-day hackathon event the challange was to build a stock market simulator app',
+  //   link: 'https://github.com/PinchoPhoebeInc/stockmarketchallenge',
+  //   url:'https://priceless-jones-e74308.netlify.app/'
+  // },
 ];
 
 const Projects = () => (
