@@ -19,18 +19,13 @@ const SOCIAL = [
     name: 'Github'
   },
   {
-    icon: InstagramIcon,
-    link: 'https://instagram.com/karolporcioncula',
-    name: 'Instagram'
-  },
-  {
     icon: LinkedInIcon,
     link: 'https://www.linkedin.com/in/karolina-p04/',
     name: 'LinkedIn'
   },
   {
     icon: GmailIcon,
-    link: 'mailto:kporcioncula.04@gmail.com',
+    link: 'mailto:karolinap004.careers@gmail.com',
     name: 'Gmail'
   },
   {

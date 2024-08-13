@@ -17,16 +17,12 @@ const SOCIAL = [
     link: 'https://github.com/kporcioncula04',
   },
   {
-    icon: InstagramIcon,
-    link: 'https://instagram.com/karolporcioncula',
-  },
-  {
     icon: LinkedInIcon,
     link: 'https://www.linkedin.com/in/karolina-p04/',
   },
   {
     icon: GmailIcon,
-    link: 'mailto:kporcioncula.04@gmail.com',
+    link: 'mailto:karolinap004.careers@gmail.com',
   },
   {
     icon: ResumeIcon,

@@ -40,13 +40,13 @@ const About = () => (
             <div>
               <h2>About Me</h2>
               <p>
-              HI! I'm Karolina Porcioncula, a full-stack web developer and software engineer. After deep self-reflection of working in retail banking , I've decided to pursue further studies and joined a coding bootcamp. Completing the 17-week immersive program at Grace Hopper in FSA of Code, has been the most rewarding decision I have made in my life. I enjoy building something from nothing. I love learning new technologies. I love seeing my creativity come to life.
-              </p>
+              Hi! I'm Karolina Porcioncula, a software engineer specializing in frontend development. I have a passion for the visual aspect of coding and love bringing designs to life through clean, efficient, and user-friendly interfaces. My journey began in retail banking, but after deep self-reflection, I decided to pivot into tech. Completing a 17-week immersive coding bootcamp at Grace Hopper in FSA of Code was one of the best decisions I've ever made. I thrive on learning new technologies and enjoy the creative process of building something from the ground up.              </p>
               <br/>
               <p>
 
-              When I'm not in front of a computer, you can find me doing yoga, cooking, or spending time with my loved ones.
-              </p>
+              When I'm not in front of a computer, you can find me doing Pilates, practicing yoga, spending time with my Manchester Terrier, or watching Formula 1.
+
+</p>
             </div>
             <HeadImage>
               <Img fluid={data.glasses.childImageSharp.fluid} />
@@ -59,16 +59,13 @@ const About = () => (
             <div>
               <h2>Tech Stack</h2>
               <p>
-              Proficient: HTML5, CSS5, Javascript, Node.js , Express, Sequelize, PostgreSQL, React,
- Redux, Material UI, React-Bootstrap
+            
+Frontend Development & Design: JavaScript, HTML, CSS, React, Vue, jQuery, Bootstrap, MaterialUI, Web Components, Figma, Wordpress, Google Tag Manager, Google Analytics, Ajax, Chart.js, Typescript
+
               </p>
               <br/>
               <p>
-              Knowledgeable: Webpack, Socket.io,SQL, TDD (Mocha/Chai/Jasmin), Heroku, TravisCI, Git, GitHub
-              </p>
-              <br/>
-              <p>
-              Basic: React-Native, MongoDB
+              Backend Development & Tools: Node.js, PHP, Express, SQL, REST APIs, AWS, Git, GitHub, Webpack, Lerna JS, Storybook, Playwright, Java, Socket.io, React Native, Jira
               </p>
 
             </div>

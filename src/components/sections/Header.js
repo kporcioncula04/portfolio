@@ -26,14 +26,14 @@ const Header = () => (
         <Container>
           <Grid>
             <HeadImage>
-              <Img fluid={data.rounded.childImageSharp.fluid} style={{width: '100%', height:'auto'}} />
+              <Img fluid={data.portfolio_image.childImageSharp.fluid} style={{width: '100%', height:'auto'}} />
             </HeadImage>
             <Text>
               <h1>
                 hi, i'm karolina
                 <br />
-                <p>software engineer. fullstack developer.</p>
-                <p>yoginī. matcha lover. oatkeeper </p>
+                <p>software engineer. frontend developer.</p>
+                <p>yoginī. pilates enthusiast. matcha lover. oatkeeper. </p>
                 <br />
               </h1>
               <br />
