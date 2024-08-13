@@ -11,7 +11,7 @@ const Header = () => (
       query {
         rounded: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "portfolio_image" }
+          name: { eq: "portfolio-img" }
         ) {
           childImageSharp {
             fluid(maxWidth: 760) {

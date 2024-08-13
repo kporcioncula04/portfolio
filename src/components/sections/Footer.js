@@ -22,11 +22,11 @@ const SOCIAL = [
   },
   {
     icon: GmailIcon,
-    link: 'mailto:karolinap004.careers@gmail.com',
+    link: 'https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=karolinap004.careers@gmail.com'
   },
   {
     icon: ResumeIcon,
-    link: 'https://drive.google.com/file/d/1D-XQgZ66tSQPDngwjPeqEFRmKXlqO5mC/view?usp=sharing'
+    link: 'https://drive.google.com/file/d/1cVPLmGfKo6EUNv1_ubpOiJnwfIhbv89m/view?usp=sharing'
   }
 ];
 
